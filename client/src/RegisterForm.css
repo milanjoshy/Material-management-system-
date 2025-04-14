@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px; /* Tightened up the width */
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: #fff;
+    margin: 0 0 1.5rem 0; /* Less bottom margin, stays at top of form */
+    font-size: 1.5rem; /* Smaller heading */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
+}
+
+form > div {
+    margin-bottom: 1rem; /* Reduced spacing */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    color: #ccc;
+    font-size: 0.9rem; /* Smaller labels */
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+input {
+    padding: 0.6rem; /* Slightly smaller inputs */
+    background: #252525;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+form > div:nth-last-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.6rem 1.5rem; /* Smaller button */
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00e6b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+form > div:last-child {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem; /* Smaller status text */
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
